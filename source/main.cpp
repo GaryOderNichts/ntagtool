@@ -210,7 +210,7 @@ int main(int argc, char* argv[])
                 std::cout << "Unfixed infos HMAC valid" << std::endl;
             } else {
                 std::cout << "Unfixed infos HMAC not valid, updating..." << std::endl;
-                te.UpdateLockedSecretHMAC();
+                te.UpdateUnfixedInfosHMAC();
             }
 
             if (!te.EncryptTag()) {
